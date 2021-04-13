@@ -1,0 +1,490 @@
+                         
+          <!--  MUSIC PLAYER HOME PAGE -->
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title></title>
+  <link rel="stylesheet" type="text/css" href="../css/screen2.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://kit.fontawesome.com/ac21b25d62.js" crossorigin="anonymous"></script>
+   <link rel="preconnect" href="https://fonts.gstatic.com">
+   <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Condensed&display=swap" rel="stylesheet">
+
+</head>
+
+<body class="text-style">
+  
+ <!--  HEADER - SECTION -->
+  <header>
+     <div class="header-left">
+        <span id="logo"><i class="fas fa-music"></i></span>
+        <span id="favorites"> Favorites</span>
+     
+     </div>
+
+     <div class="header-right">
+      <input type="text" name="search" placeholder="search">
+      <span><i class="fas fa-search"></i></span>
+      <i class="far fa-bell notification"></i>
+       <!-- <img src="user.png" class="user-img"> -->
+    <label for="user"><img src="../images/user.png"></label>
+    <input type="checkbox" id="user">
+
+    <div id="user-info">
+      <ul>
+        <li><a href="#"><img src="../images/user-img.jpg"></a></li><br>
+        <li><a href="#">My Playlist</a></li>
+        <li><a href="#">Downloads</a></li>
+        <li><a href="#">Queue</a></li>
+      </ul>
+    </div>
+
+
+     </div>
+
+  </header> 
+
+<!-- MAIN-SECTION -->
+
+<section id="main-section">
+  <div id="left-main" class="main-child">
+   
+    <!--left part 1st div: for SMALL screens -->
+     <div id="slider">
+        <div id="sliding-img-container">
+          <img src="../images/song1.jpg" alt="">
+          <img src="../images/song2.jpeg" alt="">
+          <img src="../images/song3.jpg" alt="">
+          <img src="../images/song4.jpg" alt="">
+          <img src="../images/song5.jpg" alt="">
+        </div>
+     </div>  
+
+    <!--left part 1st div: for BIG screens -->
+    <div id="left-first">
+       <div id="zara"></div>
+       <div id="dilbar"></div>
+       <div id="garmi"></div>
+    </div>
+
+
+  <!-- left part 2nd div: NEW-RELEASES  -->
+<div id="new-releases-container">
+  
+  <h2 class="text-style">New Releases</h2>
+  
+  <div class="releases">
+    
+    <!-- 1st release -->
+    <div class="releases-list">
+      <img src="../images/song5.jpg">
+      <div> <h4 class="dots">Filhal <span>
+             <label for="dot1">...</label>
+              <input type="checkbox" class="three-dots" id="dot1"></input></span>
+            </h4>
+            <h5 class="time">Aug 11,2016</h5>
+      </div>
+    </div>
+
+     <!--  2nd release -->
+    <div class="releases-list">
+      <img src="../images/jai-ho.jpg">
+      <div> 
+        <h4 class="dots">Jai Ho <span>
+           <label for="dot-two">...</label>
+           <input type="checkbox" class="three-dots" id="dot-two"></input></span>
+        </h4>
+        <h5 class="time">Aug 11,2016</h5>
+      </div>
+    </div>
+      
+
+    <!-- 3rd release -->
+
+    <div class="releases-list">
+      <img src="../images/ekmain.jpg">
+      <div> <h4 class="dots">Aahatein <span>
+            <label for="dot3">...</label>
+            <input type="checkbox" class="three-dots" id="dot3"></input></span>
+            </h4>
+        <h5 class="time">Aug 11,2016</h5>
+      </div>
+    </div>
+     
+     <!--  4th release -->
+    <div class="releases-list">
+      <img src="../images/song5.jpg">
+      <div> <h4 class="dots">Filhal <span>
+            <label for="dot4">...</label>
+            <input type="checkbox" class="three-dots" id="dot4"></input></span>
+         </h4>
+          <h5 class="time">Aug 11,2016</h5>
+      </div>
+    </div>
+
+  </div>  <!--  end of releases -->
+</div>   <!-- end of releases-container -->
+ 
+          
+           <!-- left part 3rd div:  ARTISTs -->
+
+<div id="artists">
+  <h2>Popular Artists</h2>
+ 
+  <div id="artist-container">
+    <div class="artist-child" id="artist1">
+      <div>Justin</div>
+    </div>  
+    <div class="artist-child" id="artist2">
+      <div>Priyanka</div>
+    </div>
+    <div class="artist-child" id="artist3">
+      <div>Nick</div>
+    </div>
+    <div class="artist-child" id="artist4">
+      <div>Kareena</div>
+    </div>
+    <div class="artist-child" id="artist5">
+      <div>Deepika</div>
+    </div>
+  </div>  <!-- closing of artist container -->
+</div> <!-- closing of artist -->
+
+     <!-- left part 4th div: songs acc to MOOD -->
+
+<div id="songs-mood">
+  
+  <div id="songs-mood-child1">
+    
+    <div class="change-border" id="mood1">
+      <div class="mood-name">
+        <span style="position:relative; top:20%;">Your Music</span>
+      </div>
+    </div>
+    <div class="mood" id="mood2">
+       <div class="mood-name">patriotic</div>
+    </div>
+    <div class="mood" id="mood3">
+       <div class="mood-name">love</div>
+    </div>
+    <div class="mood" id="mood4">
+       <div class="mood-name">sad</div>
+    </div>
+    <div class="mood" id="mood5">
+       <div class="mood-name">energy</div>
+    </div>
+  
+  </div>  <!-- closing of song-mood-child1 -->
+  
+  <div id="songs-mood-child2">
+   
+    <div class="other-mood">
+      <div id="other-mood1" class="other-mood-img">
+          <div class="mood-type">Party</div>
+      </div>
+    </div>
+
+    <div class="other-mood">
+      <div id="other-mood2" class="other-mood-img">
+         <div class="mood-type">Electronic</div>
+      </div>
+    </div>
+ 
+   <div class="other-mood">
+       <div  id="other-mood3" class="other-mood-img">
+        <div class="mood-type">Road Trip</div>
+       </div>  
+   </div>  
+   
+  </div>
+
+
+</div>
+
+       <!-- left part 5th div: LATEST HINDI -->
+   
+   <div id="latest-hindi">
+
+    <h2 class="text-style">Latest Hindi</h2>
+
+    <div class="inline-block">
+     <img src="../images/rubaru.jpg">
+     <div>
+     <h5>Rubaru</h5>
+     <h6>Aug 10,2020</h6>
+   </div>
+    </div> 
+    
+    <div class="inline-block"> 
+     <img src="../images/burj-khalifa.jpg">
+     <div>
+     <h5>Burj Khalifa</h5>
+     <h6>Aug 11,2020</h6>
+   </div>
+    </div>
+   
+    <div class="inline-block"> 
+     <img src="../images/garmi.jpg"> 
+     <div>
+     <h5>Garmi</h5>
+     <h6>Aug 10,2020</h6>
+   </div>
+    </div>
+    
+    <div class="inline-block hindi-hide"> 
+     <img src="../images/sun-zara.jpg">
+     <div>
+     <h5>Memories</h5>
+     <h6>Aug 10,2020</h6>
+   </div>
+    </div>
+
+   </div>
+
+       <!-- left part 6th div: LATEST ENGLISH -->
+<div id="latest-eng">
+  <h2>Latest English</h2>
+  <div class="inline-block">
+   <img src="../images/memories.jpg">
+   <div>
+     <h5>Memories</h5>
+     <h6>Aug 10,2020</h6>
+   </div>
+  </div>
+  
+  <div class="inline-block">
+   <img src="../images/friends.jpg">
+   <div>
+     <h5>Friends</h5>
+     <h6>Aug 10,2020</h6>
+   </div>
+  </div>
+  
+  <div class="inline-block">
+   <img src="../images/senorita.jpeg"> 
+   <div>
+     <h5>Senorita</h5>
+     <h6>Aug 10,2020</h6>
+   </div>
+  </div>
+  
+  <div class="inline-block eng-hide">
+   <img src="../images/someone-u-loved.jpg">
+   <div>
+     <h5>Someone u loved</h5>
+     <h6>Aug 10,2020</h6>
+   </div>
+  </div> 
+</div>
+
+
+
+</div>
+   
+  <!--  right-section of main for small screen -->
+  <div id="right-main-small-screen" class="main-child">
+    
+    <label for="hamburger"><i class="fas fa-bars"></i></label>
+    <input type="checkbox" id="hamburger">
+
+    <div id="hamburger-list">
+      <ul>
+        <li><a href="#">QUEUE</a></li>
+        <li><a href="#">PLAYLISTS</a></li>
+        <li><a href="#">FAVORITES</a></li>
+      </ul>
+    </div>
+
+  </div>
+  
+   
+  <!--  right section of main for big screens -->
+  <div id="right-main-big-screen" class="main-child">
+        <nav id="nav-big-screen">
+          <span>PLAYLISTS</span>
+          <select name="playlists" onChange="window.location.href=this.value">
+            <option selected style="color:coral;" value="screen-one.html">Queue</option>
+            <option style="color:coral;" selected>Playlists</option>
+          </select>
+        </nav>
+          
+          <!-- QUEUE LIST CONTAINER-->
+        <div id="selected-list">
+               <!--container of 1st song -->
+             <div class="queue-song text-style">
+             <div id="song-img">
+                <img src="../images/ekmain.jpg">
+              </div>
+              
+              <div class="song-details">
+              <h5>Aahatein</h5>  
+              <h6>A.R Rahman</h6>   
+              </div>
+              <div class="like"><a href="#"><i class="fas fa-heart"></i></a></div>
+            </div>
+
+
+             <!--container of 2nd song -->
+            <div class="queue-song text-style">
+              <div id="song-img">
+                <img src="../images/garmi.jpg">
+              </div>
+              <div class="song-details">
+                <h5>Garmi</h5>  
+                 <h6>Neha Kakkar, Badshah</h6>   
+              </div>
+              <div class="like"><a href="#"> <i class="fas fa-heart"></i></a></div>
+            </div>
+
+
+            <!-- container of 3rd song -->
+             <div class="queue-song text-style">
+               <div id="song-img">
+                 <img src="../images/rubaru.jpg">
+               </div>
+               <div class="song-details">
+                  <h5>Rubaru</h5>  
+                  <h6>Kamal Khan</h6>   
+               </div>
+               <div class="like"><a href="#"> <i class="fas fa-heart"></i></a></div>
+             </div>
+
+            <!--container of 4th song -->
+            <div class="queue-song text-style">
+              <div id="song-img">
+                <img src="../images/ashayein.jpg">
+              </div>
+              
+              <div class="song-details">
+              <h5>Aashayein</h5>  
+              <h6>Kk ans Salim Merchant</h6>   
+              </div>
+              <div class="like"><a href="#"><i class="fas fa-heart"></i></a></div>
+            </div>
+
+
+             <!--container of 5th song -->
+            <div class="queue-song text-style">
+              <div id="song-img">
+                <img src="../images/chak-de-india.jpg">
+              </div>
+              <div class="song-details">
+                <h5>Chak de India</h5>  
+                 <h6>Salim Merchant and Mariana</h6>   
+              </div>
+              <div class="like"><a href="#"> <i class="fas fa-heart"></i></a></div>
+            </div>
+
+
+            <!-- container of 6th song -->
+             <div class="queue-song text-style">
+               <div id="song-img">
+                 <img src="../images/hindustani.jpg">
+               </div>
+               <div class="song-details">
+                  <h5>hindustani</h5>  
+                  <h6>A.R. Rahman</h6>   
+               </div>
+               <div class="like"><a href="#"><i class="fas fa-heart"></i></a></div>
+             </div>
+
+             <!-- container of 7th song -->
+             <div class="queue-song text-style">
+               <div id="song-img">
+                 <img src="../images/ekmain.jpg">
+               </div>
+               <div class="song-details">
+                  <h5>Aahatein</h5>  
+                  <h6>A.R. Rahman</h6>   
+               </div>
+               <div class="like"><a href="#"><i class="fas fa-heart"></i></a></div>
+             </div>
+
+             <!-- container of 8th song -->
+             <div class="queue-song text-style">
+               <div id="song-img">
+                 <img src="../images/song1.jpg">
+               </div>
+               <div class="song-details">
+                  <h5>Haseena diwani</h5>  
+                  <h6>Mika Singh</h6>   
+               </div>
+               <div class="like"><a href="#"> <i class="fas fa-heart"></i></a></div>
+             </div>
+            
+            <!-- container of 9th song -->
+             <div class="queue-song text-style">
+               <div id="song-img">
+                 <img src="../images/song5.jpg">
+               </div>
+               <div class="song-details">
+                  <h5>Filhal</h5>  
+                  <h6>B Praak</h6>   
+               </div>
+               <div class="like"><a href="#"> <i class="fas fa-heart"></i></a></div>
+             </div>
+
+             <!-- container of 10th song -->
+             <div class="queue-song text-style">
+               <div id="song-img">
+                 <img src="../images/song4.jpg">
+               </div>
+               <div class="song-details">
+                  <h5>illegal Weapon</h5>  
+                  <h6>Garry Sandhu</h6>   
+               </div>
+               <div class="like"><a href="#"><i class="fas fa-heart"></i></a></div>
+             </div>
+
+             <!-- container of 11th song -->
+             <div class="queue-song text-style">
+               <div id="song-img">
+                 <img src="../images/garmi.jpg">
+               </div>
+               <div class="song-details">
+                  <h5>Garmi</h5>  
+                  <h6>Neha Kakkar, Badshah</h6>   
+               </div>
+               <div class="like"><a href="#"><i class="fas fa-heart"></i></a></div>
+             </div>
+
+        </div>  <!-- queue list-container -->
+  </div>   <!-- right-main end -->
+    
+</section> <!-- main-section end -->
+
+<div id="song-playing">
+ 
+  <div class="play-song" id="play-song-left">
+    <img src="../images/friends.jpg">
+    <div>
+      <h5>Friends <span><i class="fas fa-heart"></i> <i class="fas fa-ban"></i></span></h5>
+      <h6>Annie Marrie</h6>
+    </div>
+  </div>
+
+   <!-- centre of current song -->
+  <div class="play-song" id="play-song-center">
+    <div class="play-buttons">
+       <span><i class="fas fa-random"></i></span>
+       <span><i class="fas fa-step-backward"></i></span>
+       <span><i class="fas fa-pause-circle"></i></span>
+       <span><i class="fas fa-step-forward"></i></span>
+       <span><i class="fas fa-redo"></i></span>
+    </div>
+    <input type="range" value="50" class="volume">
+  </div>
+  
+
+  <div class="play-song" id="play-song-right">
+    <span><i class="fas fa-align-left"></i></span>
+    <span><i class="fas fa-tv"></i></span>
+    <span><input type="range" value="50" class="volume vol"></span>
+    <span class="maximize-arrow"><i class="fas fa-expand-alt"></i></span>
+  </div>
+</div>
+  
+  
+</body>
+</html>
